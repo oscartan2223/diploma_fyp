@@ -1,7 +1,7 @@
 <?php
     include "src/session.php";
     include "src/conn.php"; // Include the connection file
-
+    
     // Get the customer ID from the session
     $customerID = $_SESSION['id'];
 
