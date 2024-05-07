@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans',sans-serif;
+    box-sizing: border-box;
+}
+.navbar{
+    height: 150vh;
+    width: 100%;
+    background-color: #3c4371;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;  
+    background-color: #D9D9D9; 
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    color: #FFFFFF;
+    transition: .4s;
+}
+nav i{
+    width: 60px;
+    cursor: pointer  
+}
+.container{
+    background: white;
+    width: 90%;
+    height: 60%;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 4%;
+    box-shadow: 2px 5px 20px rgba(119,119,119,.5);
+    border-radius: 25px;
+    overflow-y: auto;
+}
+.appointment h1{
+    margin-left: 42%;
+    font-family: "Montserrat", sans-serif;
+    color: #3c4371;
+    font-size: 1.4rem;
+    margin-top: 17px;
+    margin-bottom: 16px;
+}
+.appointment th{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    background-color: #3c4371;
+}
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    max-width: 95%;
+    width: 100%;
+    box-shadow: 0 2px 15px rgba(64,64,64,.7);
+    margin-bottom: 5%;
+}
+td {
+    text-align: center;
+}
+td, th {
+    width: 10%; 
+}
+th {
+    text-align: center;
+    font-size: 19px;
+    background-color: #3c4371;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #eeeeee; /* Set the background color for even rows */
+}
+tr{
+    height: 40px;
+}
+.wider-column {
+    width: 500px; /* Adjust the width value as needed */
+}
+.button-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3c4371;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    box-shadow: 0 2px 15px rgba(64,64,64,.7);
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #45a049;
+  }

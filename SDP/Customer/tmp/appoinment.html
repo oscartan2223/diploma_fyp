@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PetPal - Make Appointment</title>
+    <link rel="stylesheet" type="text/css" href="appointment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+
+<div class="navbar">
+    <nav>
+        <img src="petpal.png">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Medical Services</a></li>
+            <li><a href="">Appointment</a></li>
+        </ul>
+        <a href="#" class="btn">Login</a>
+    </nav>
+</div>
+<div class="image">
+    <img src="appointment.jpg">
+</div>
+<div class="wrapper">
+    <div class="header">
+        <ul>
+            <li class="active form_1_progressbar">
+                <div>
+                    <p>1</p>
+                </div>
+            </li>
+            <li class="form_2_progressbar">
+                <div>
+                    <p>2</p>
+                </div>
+            </li>
+            <li class="form_3_progressbar">
+                <div>
+                    <p>3</p>
+                </div>
+            </li>
+        </ul>
+
+
+    </div>
+    <div class="form_wrap">
+        <div class="form_1 data_info">
+            <h2>Select the Service</h2>
+            <form>
+                <div class = "form_container">
+                    <div class="input_wrap">
+                        <label for="service_type">Service Type</label>
+                        <select name="Service Type" id="service_type">
+                            <option value="PetPal Service">PetPal Service</option>
+                            <option value="Medical Service">Medical Service</option>
+                        </select>
+                    </div>
+                    <div class="input_wrap" id="petpal_service">
+                        <label for="petpal_service_select">PetPal Service</label>
+                        <select name="PetPal Service" id="petpal_service_select">
+                            <option value="Pet Grooming">Pet Grooming</option>
+                            <option value="Pet Boarding">Pet Boarding</option>
+                            <option value="Pet Transportation">Pet Transportation</option>
+                            <option value="Pet Traning">Pet Training</option>
+                            <option value="Pet Surgery Aftercare">Pet Surgery Aftercare</option>
+                        </select>
+                    </div>
+                    <div class="input_wrap" id="medical_service" style="display: none;">
+                        <label for="medical_service_select">Medical Service</label>
+                        <select name="Medical Service" id="medical_service_select">
+                            <option value="Wellness Examination">Wellness Examination</option>
+                            <option value="Vaccinations">Vaccinations</option>
+                            <option value="Parasite Control">Parasite Control</option>
+                            <option value="Dental Care">Dental Care</option>
+                            <option value="Microchipping">Microchipping</option>
+                            <option value="Surgery">Surgery</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+        </div>        
+        <div class="form_2 data_info" style="display: none;">
+            <h2>Select Appointment Date & Time</h2>
+            <form>
+                <div class = "form_container">
+                    <div class="input_wrap">
+                        <label for="appointment_date">Appointment Date</label>
+                        <input type="date" name="Appointment Date" id="appointment_date">
+                    </div>
+                    <div class="input_wrap">
+                        <label for="appointment_time">Appointment Time</label>
+                        <select name="Appointment Time" id="appointment_time">
+                            <option value="9:00 AM">9:00 AM</option>
+                            <option value="10:00 AM">10:00 AM</option>
+                            <option value="11:00 AM">11:00 AM</option>
+                            <option value="12:00 PM">12:00 PM</option>
+                            <option value="1:00 PM">1:00 PM</option>
+                            <option value="2:00 PM">2:00 PM</option>
+                            <option value="3:00 PM">3:00 PM</option>
+                            <option value="4:00 PM">4:00 PM</option>
+                            <option value="5:00 PM">5:00 PM</option>
+                        </select>
+                    </div>
+                    <div class="input_wrap" id="checkout_date" style="display: none;">
+                        <label for="checkout_date">Check-out Date</label>
+                        <input type="date" name="Check-out Date" id="checkout_date">
+                    </div>
+                    <div class="input_wrap" id="checkout_time" style="display: none;">
+                        <label for="checkout_time">Check-out Time</label>
+                        <select name="Check-out Time" id="checkout_time">
+                            <option value="12:00 PM">12:00 PM</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="form_3 data_info" style="display: none;">
+            <h2>Enter Personal Info</h2>
+            <form>
+                <div class = "form_container">
+                    <div class="input_wrap">
+                        <label for="owner_name">Owner Name</label>
+                        <input type="text" name="Owner Name" id="owner_name">
+                    </div>
+                    <div class="input_wrap">
+                        <label for="pet_name">Pet Name</label>
+                        <input type="text" name="Pet Name" id="pet_name">
+                    </div>
+                    <div class="input_wrap">
+                        <label for="contact">Contact Number</label>
+                        <input type="text" name="Contact Number" id="contact">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="btns_wrap">
+        <div class="common_btns form_1_btns">
+            <button type="button" class="btn_next">Next
+                <span class="icon">
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                </span>
+            </button>
+        </div>
+        <div class="common_btns form_2_btns" style="display: none;">
+            <button type="button" class="btn_back ">Back
+                <span class="icon">
+                    <ion-icon name="arrow-back-outline"></ion-icon>
+                </span>
+            </button>
+            <button type="button" class="btn_next">Next
+                <span class="icon">
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                </span>
+            </button>
+        </div>
+        <div class="common_btns form_3_btns" style="display: none;">
+            <button type="button" class="btn_back ">Back
+                <span class="icon">
+                    <ion-icon name="arrow-back-outline"></ion-icon>
+                </span>
+            </button>
+            <button type="button" class="btn_done">Done
+                <span class="icon"></span>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal_wrapper">
+    <div class="shadow"></div>
+    <div class="success_wrap">
+        <span class="modal_icon">
+            <ion-icon name="checkmark-outline"></ion-icon>
+        </span>
+        <p>You have successfully booked the appointment.</p>
+    </div>
+</div>
+
+<section class="footer">
+    <div class="social">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+    </div>
+    <ul class="list">
+        <li>
+            <a href="#">Home</a>
+        </li>
+        <li>
+            <a href="#">Services</a>
+        </li>
+        <li>
+            <a href="#">Medical Services</a>
+        </li>
+        <li>
+            <a href="#">Appointment</a>
+        </li>
+    </ul>
+</section>
+
+<script type="text/javascript" src="appointment.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PetCare System - Pet Training Review</title>
+        <link rel="stylesheet" href="">
+        <script src="https://kit.fontawesome.com/680d8c5a2a.js" crossorigin="anonymous"></script>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                font-family: 'Josefin Sans', sans-serif;
+                box-sizing: border-box;
+            }
+            
+            .navbar {
+                height: 100vh;
+                width: 100%;
+                background-color: #3c4371;
+            }
+            
+            nav {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-top: 45px;
+                padding-left: 8%;
+                padding-right: 8%;
+                background-color: #D9D9D9; 
+            }
+            
+            .logo {
+                width: 120px;
+                cursor: pointer;
+            }
+            
+            nav ul li {
+                list-style-type: none;
+                display: inline-block;
+                padding: 10px 25px;
+            }
+            
+            nav ul li a {
+                color: black;
+                text-decoration: none;
+                font-weight: bold;
+                text-transform: capitalize;
+            }
+            
+            nav ul li a:hover {
+                color: #FFFFFF;
+                transition: .4s;
+            }
+            
+            .btn {
+                background-color: #353535;
+                color: #FFFFFF;
+                text-decoration: none;
+                border: 2px solid transparent;
+                font-weight: bold;
+                padding: 10px 25px;
+                border-radius: 30px;
+                transition: transform 0.4s;
+            }
+            
+            .btn:hover {
+                transform: scale(1.2);
+            }
+
+            .container {
+                margin: 40px auto;
+                max-width: 800px;
+                text-align: justify;
+                background-color: #3c4371;
+                color: #FFFFFF;
+            }
+            
+            h1 {
+                color: #FFFFFF;
+                margin-bottom: 30px;
+                text-align: center;
+            }
+            ul{
+                margin-bottom: 15px;
+                line-height: 24px;
+            }
+            p {
+                margin-bottom: 20px;
+                line-height: 1.5;
+            }
+            .about{
+                height: 72%;
+            }
+            .main{
+                width: 1330px;
+                max-width: 95%;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                height: 100%;
+            }
+            .main img{
+                padding-left: 5%;
+                scale: 110%;
+            }
+            .appointment-btn {
+                display: inline-block;
+                background-color: #FFFFFF;
+                color: #3c4371;
+                text-decoration: none;
+                border: 2px solid transparent;
+                font-weight: bold;
+                padding: 10px 25px;
+                border-radius: 30px;
+                transition: transform 0.4s;
+                margin-top: 6px;
+                margin-left: 35%;
+            }
+            .appointment-btn:hover {
+                transform: scale(1.2);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <nav>
+                <img src="petpal.png" alt="PetPal logo" class="logo">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="medical.html">Medical Services</a></li>
+                    <li><a href="">Appointment</a></li>
+                </ul>
+                <a href="#" class="btn">Login</a>
+            </nav>
+            <section class="about">
+                <div class="main">
+                    <img src="training.png" alt="">
+                    <div class="container">
+                        <h1>Pet Training Review</h1>
+                        
+                        <p>Our pet training program is designed to help your furry friend develop good behavior, obedience, and social skills. Our experienced trainers use positive reinforcement techniques to create a fun and rewarding training environment for your pet.</p>
+                        
+                        <p>By enrolling your pet in our training program, you can:</p>
+                        
+                        <ul>
+                            <li>Teach your pet essential commands and basic manners</li>
+                            <li>Address behavioral issues such as excessive barking or chewing</li>
+                            <li>Improve your pet's socialization with other animals and people</li>
+                            <li>Build a stronger bond and understanding between you and your pet</li>
+                        </ul>
+                        
+                        <p>Invest in your pet's well-being and ensure a harmonious living environment. Join our pet training program today and witness the positive transformation in your pet's behavior!</p>
+                        
+                        <a href="appointment.html" class="appointment-btn">Schedule Pet Training</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

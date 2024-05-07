@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PetCare System - Vaccinations Review</title>
+        <link rel="stylesheet" href="">
+        <script src="https://kit.fontawesome.com/680d8c5a2a.js" crossorigin="anonymous"></script>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                font-family: 'Josefin Sans', sans-serif;
+                box-sizing: border-box;
+            }
+            
+            .navbar {
+                height: 100vh;
+                width: 100%;
+                background-color: #3c4371;
+            }
+            
+            nav {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-top: 45px;
+                padding-left: 8%;
+                padding-right: 8%;
+                background-color: #D9D9D9; 
+            }
+            
+            .logo {
+                width: 120px;
+                cursor: pointer;
+            }
+            
+            nav ul li {
+                list-style-type: none;
+                display: inline-block;
+                padding: 10px 25px;
+            }
+            
+            nav ul li a {
+                color: black;
+                text-decoration: none;
+                font-weight: bold;
+                text-transform: capitalize;
+            }
+            
+            nav ul li a:hover {
+                color: #FFFFFF;
+                transition: .4s;
+            }
+            
+            .btn {
+                background-color: #353535;
+                color: #FFFFFF;
+                text-decoration: none;
+                border: 2px solid transparent;
+                font-weight: bold;
+                padding: 10px 25px;
+                border-radius: 30px;
+                transition: transform 0.4s;
+            }
+            .btn:hover {
+                transform: scale(1.2);
+            }
+            .container {
+                margin: 40px auto;
+                max-width: 800px;
+                text-align: justify;
+                background-color: #3c4371;
+                color: #FFFFFF;
+            }
+            
+            h1 {
+                color: #FFFFFF;
+                margin-bottom: 30px;
+                text-align: center;
+            }
+            ul{
+                margin-bottom: 15px;
+                line-height: 22px;
+            }
+            p {
+                margin-bottom: 20px;
+                line-height: 1.5;
+            }
+            .about{
+                height: 72%;
+            }
+            .main{
+                width: 1330px;
+                max-width: 95%;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                height: 100%;
+            }
+            .main img{
+                scale: 80%;
+            }
+            .appointment-btn {
+                display: inline-block;
+                background-color: #FFFFFF;
+                color: #3c4371;
+                text-decoration: none;
+                border: 2px solid transparent;
+                font-weight: bold;
+                padding: 10px 25px;
+                border-radius: 30px;
+                transition: transform 0.4s;
+                margin-top: 13px;
+                margin-left: 35%;
+            }
+            .appointment-btn:hover {
+                transform: scale(1.2);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <nav>
+                <img src="petpal.png" alt="PetPal logo" class="logo">
+                <ul>
+                    <li><a href="CusMain.php">Home</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="medical.html">Medical Services</a></li>
+                    <li><a href="appointment.php">Appointment</a></li>
+                </ul>
+                <a href="ownerProfile.php"><i class="fa-solid fa-user"></i></a>
+            </nav>
+            <section class="about">
+                <div class="main">
+                    <img src="vaccinations.png">
+                    <div class="container">
+                        <h1>Vaccinations Review</h1>
+                        
+                        <p>Vaccinations are crucial for protecting your pet from various diseases and ensuring their well-being. Our veterinarians provide a comprehensive range of vaccinations tailored to your pet's specific needs. Vaccinations work by stimulating your pet's immune system to develop defenses against harmful pathogens.</p>
+                        
+                        <p>By keeping your pet's vaccinations up to date, you:</p>
+                        
+                        <ul>
+                            <li>Prevent diseases such as rabies, distemper, and parvovirus</li>
+                            <li>Protect your pet from contagious illnesses</li>
+                            <li>Help maintain community health and prevent outbreaks</li>
+                            <li>Ensure your pet's overall health and longevity</li>
+                        </ul>
+
+                        <p>Don't compromise your pet's health. Stay proactive and make sure your pet receives the necessary vaccinations. Schedule a vaccination appointment today and give your pet the best protection possible!</p>
+                        
+                        <a href="appointment.php" class="appointment-btn">Schedule an Appointment</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans',sans-serif;
+    box-sizing: border-box;
+}  
+
+.navbar{
+    height: 30vh;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;  
+    background-color: #D9D9D9; 
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover{
+    color: #FFFFFF;
+    transition: .4s;
+}
+
+nav i{
+    width: 60px;
+    cursor: pointer  
+}
+
+.subMenuwrap{
+    position: absolute;
+    top: 19%;
+    right: 10%;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.subMenuwrap.openMenu{
+    max-height: 400px;
+}
+
+.subMenu{
+    background: #fff;
+    padding: 5px 20px 5px 20px;
+    margin: 10px;
+}
+
+.subLink{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0;
+}
+
+.subLink p{
+    width: 100%;
+}
+
+.subLink span{
+    margin-left: 5px;
+    font-size: 22px;
+    transition: transform 0.5s;
+}
+
+.subLink:hover p{
+    font-weight: 600;
+}
+.subLink:hover span{
+    transform:translate(5px)
+}
+
+.input_wrap{
+    margin-left: 100px;
+    font-size: 18px;
+}
+
+.input_wrap select{
+    border: 2px solid #bfc0c0;
+    border-radius: 3px;
+    margin-top: 10px;
+    padding: 10px;
+    display: block;
+    width: 20%;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.input_wrap select:focus{
+    border-color: #25273d;
+}
+
+.chart{
+    border: 2px solid #bfc0c0;
+    border-radius: 3px;
+    margin: 50px auto;
+    width: 1000px;
+    height: 500px;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+.animated {
+    animation-name: fadeIn;
+}
